@@ -1,0 +1,4 @@
+apiVersion: v2
+name: spazz-app
+description: Deploy spazz-app
+version: 0.1.0
