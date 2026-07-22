@@ -8,6 +8,6 @@ postgres:
   image: postgres:15-alpine
   database: spazzdb
   user: spazz
-  password: "secure-password"  
+  password: "11111"  
   storageSize: 1Gi
   storageClass: nfs-client   
