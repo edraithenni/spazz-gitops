@@ -1,0 +1,13 @@
+image:
+  repository: ghcr.io/edraithenni/spazz-app
+  tag: latest 
+
+replicaCount: 3
+
+postgres:
+  image: postgres:15-alpine
+  database: spazzdb
+  user: spazz
+  password: "secure-password"  
+  storageSize: 1Gi
+  storageClass: nfs-client   
