@@ -31,11 +31,11 @@ spec:
             - containerPort: 5432
           env:
             - name: POSTGRES_DB
-              value: {{ .Values.postgres.database }}
+              value: "{{ .Values.postgres.database }}"
             - name: POSTGRES_USER
-              value: {{ .Values.postgres.user }}
+              value: "{{ .Values.postgres.user }}"
             - name: POSTGRES_PASSWORD
-              value: {{ .Values.postgres.password }}
+              value: "{{ .Values.postgres.password }}"
           volumeMounts:
             - name: postgres-data
               mountPath: /var/lib/postgresql/data
