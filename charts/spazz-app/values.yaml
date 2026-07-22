@@ -1,5 +1,5 @@
 image:
-  repository: ghcr.io/edraithenni/spazz-app
+  repository: docker.io/edraithenni/spazz-app
   tag: "1bbff0a1af51fb01a641c61a0f478d85280e21c7"
 
 replicaCount: 3
