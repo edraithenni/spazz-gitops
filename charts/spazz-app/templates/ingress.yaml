@@ -9,10 +9,10 @@ spec:
   ingressClassName: nginx
   tls:
     - hosts:
-        - spazz-app.local
+        - spazz-app.ddns.net
       secretName: spazz-tls
   rules:
-    - host: spazz-app.local
+    - host: spazz-app.ddns.net
       http:
         paths:
           - path: /
