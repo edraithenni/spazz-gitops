@@ -18,9 +18,17 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
-          env:
-            - name: DB_TYPE
-              value: "postgres"
-            - name: DB_PATH
-              value: "postgres://{{ .Values.postgres.user }}:{{ .Values.postgres.password }}@postgres:5432/{{ .Values.postgres.database }}?sslmode=disable"
+         env:
+           - name: DB_TYPE
+             value: "postgres"
+           - name: DB_HOST
+             value: "postgres"
+           - name: DB_PORT
+             value: "5432"
+           - name: DB_USER
+             value: {{ .Values.postgres.user }}
+           - name: DB_PASSWD
+             value: {{ .Values.postgres.password }}
+           - name: DB_NAME
+             value: {{ .Values.postgres.database }}
 
