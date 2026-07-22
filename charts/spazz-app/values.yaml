@@ -1,13 +1,11 @@
 image:
   repository: docker.io/edraithenni/spazz-app
   tag: "1bbff0a1af51fb01a641c61a0f478d85280e21c7"
-
 replicaCount: 3
-
 postgres:
   image: postgres:15-alpine
   database: spazzdb
   user: spazz
-  password: "11111"  
+  password: "11111"
   storageSize: 1Gi
-  storageClass: nfs-client   
+  storageClass: nfs-client
