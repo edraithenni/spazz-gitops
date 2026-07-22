@@ -1,6 +1,6 @@
 image:
   repository: docker.io/edraithenni/spazz-app
-  tag: "1bbff0a1af51fb01a641c61a0f478d85280e21c7"
+  tag: "3a90919453b9ab59de0d1e3da4a69623c98f26f7"
 replicaCount: 3
 postgres:
   image: postgres:15-alpine
